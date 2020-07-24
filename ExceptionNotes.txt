@@ -1,0 +1,147 @@
+class Throwable
+{
+		getMessage();
+		printStackTrace();
+}
+
+class Exception extends Throwable
+{
+
+
+}
+
+class  IOException extends Exception   // Checked Exception 
+{
+
+
+}
+
+
+class RuntimeException extends Exception   
+{
+
+
+}
+
+class ArrayIndexOutOfBoundsException extends RuntimeExcption
+{
+
+
+}
+
+
+
+
+
+CheckedExceptions/Compile Time Exceptions: These occur at Comiple Time
+1. All Checked Exception Class come under "Exception class"   ----under java.lang.
+Ex: IOException,FileNotFoundException,SQLException
+
+
+RuntimeExceptions/Compile Time Exceptions: These occur at RunTime
+1. All Runtime Exception Class come under "RuntimeException class"   ----under java.lang.
+Ex: ArithmeticException,ClassNotFoundException,InterruptedException,NullPointerException
+
+Types of Try -catch block
+1.try
+	{
+
+
+
+	}catch(ExceptionName ref)
+	{
+
+	}
+2.	
+try
+	{
+
+
+
+	}catch(ExceptionName ref)
+	{
+
+	}
+	catch(ExceptionName ref)
+	{
+
+	}
+
+
+
+3.
+//from java1.7
+try
+	{
+
+
+
+	}catch(ExceptionName1 ref | ExceptionName2 ref |ExceptionName1 ref )
+	{
+
+	}
+
+
+4.ARM from jav1.7
+
+	try(ResourcseName)
+	{
+	}catch(ExceptionName1 ref)
+	{
+	}
+
+
+
+
+
+// Next how to use finally
+// Rule:
+// finally should be always followed after catch
+	try
+	{
+
+	}catch(ExceptionName1 ref)
+	{
+
+	}
+	finally
+	{
+	// this block will execute even if the cathc block is succesfful in handling the exception or not......
+	// we use this block specialy for clean up of resourcse that closing network,db,java objects.
+	}
+
+
+
+
+// Next how to use throws
+
+methodname() throws ExcpetionName
+{
+
+}
+		
+methodname() throws Excpetion1,Excpetion2,Exception3
+{
+
+}
+
+
+// Next how to use throw
+
+methodname() throws Excpetion
+{
+
+throw new NameofthException();
+
+}
+
+
+
+
+
+
+
+
+
+
+
