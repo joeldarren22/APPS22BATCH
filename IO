@@ -1,0 +1,73 @@
+					Java - IO Overview
+
+						IO-Package
+
+1. What is IO Pacakge: 
+
+IO Package provides  set of predifine classes and Interfaces to deal with I/O with File System.
+
+1.  Input from Console
+2.  Output to Console
+3. Read Data from File
+4. Write Data to File
+5. Serialization
+
+					IO
+
+	InputStream
+	ByteBasesStreams:  
+
+
+
+	DataInputStream,FileInputStream
+
+	CharacterBasedStream	                          
+	Reader
+	BufferedReader,CharArrayReader,FileReader
+
+	OutputStream
+	ByteBasesStreams
+	DataOutputStream,FileOutputStream
+
+
+
+CharacterBasedStream	                          
+Writer	
+CharArrayWriter,FileWriter
+
+
+
+
+ByteBasesioStreams: These Streams read and Write data in the form of bytes
+
+ex: Java---->byte---->nativemachine---->datatoafile
+				
+ex: native---->byte---->character--->tothe file
+
+CharcterStreams: These Streams read and Write data in the form of characters			
+// directly write each byte into its orinal character form by using unicode concept
+
+
+
+How to read Data from the console using java.io. package
+1.DataInputStream
+2.BufferedReader
+
+How to read Data from the file
+1.FileInputStream: ByteBased class
+2.FileReader:Character Based Class
+
+
+How to write Data to the file
+1.FileOutputStream: ByteBased class
+2.FileWriter:Character Based Class
+
+
+
+
+
+
+
+
+
+
