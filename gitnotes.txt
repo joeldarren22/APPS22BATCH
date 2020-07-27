@@ -1,0 +1,68 @@
+git config --global user.email "jagdish.java2@gmail.com"
+git config --global user.name "J3-Aquacool"
+
+
+git init  : First comand of git used to initialse it has  a git repository
+(It wil create a .git file)
+To view the .git file which is hidden in dos use the below command
+
+e:\workingdirectory>attrib -h -r -s /s /d e:\J3TrainigLabs\*.*
+after this command is succesfful check it with the below command
+e:\workingdirectory>dir
+
+The next command after doing the above
+
+git status
+ 
+cuurently it will say no files to be commited ,so lets create a file .
+
+e:\workingdirectory>copy con trainingagenda.txt
+
+use the above command and add some data into it and save it by using ctrl+z key's.
+
+
+after this again issue the "git status" command
+e:\workingdirectory>git status
+it wil now show the recently created file with a red colour meaning its not be added to git to be tracked,
+so to do this we have to issue a command "git add",so lets do it
+
+e:\workingdirectory>git add traingagenda.txt
+it wil now be added for tracking,it will now show that file info with a green color.
+
+after that lets commit that is save the file with some message for later refernce.
+now issue the below  command
+
+e:\workingdirectory>git status
+it will now show nothing to commit has we have commited the file
+
+
+no lets make changes to the file and repeat the same ie
+1.git status
+
+2.git add    (for muliple adding of files u can use: git add *.txt or *.* has per the requirement)
+
+3.git status
+
+4.git commit
+
+
+// Next we all this to remote repositry :
+
+1.go to github
+
+2.create a repository
+
+3.copy the repository path and paste it with the below git command
+
+e:\workingdirectory>git remote add origin https://github.com/J3-Aquacool/Labs.git
+this  will add the link to ur remote repository
+
+
+then next push the data to remtoe repository
+
+
+
+e:\workingdirectory>git push -u origin master
+this will push the data in the remote repository kindly check in it show be listed.
+
+

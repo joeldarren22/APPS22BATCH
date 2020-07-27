@@ -1,0 +1,95 @@
+
+
+
+What is Load Factor?
+Load Factor is called has Threshold....
+HashMap
+1.Default Load Factor is 0.75
+2.Hashmap capcity is 16 
+for 16 elemesnt the load factor is 0.75 (ie threshold).
+HashMap h=new HashMap();16 is the capacity and a threshold 0.75
+
+
+Calculation
+
+		loadfactor=   numberofelemnts/totalcapacity;
+
+ie exe
+
+HashMap h=new HashMap();
+I have stored 5 elements
+
+
+				5/16=loadfactor
+
+
+
+Total Capcity is 16 Elements
+It mean u can store 16 elemnts by dedault.
+
+what id capacity of hashmap is more then 16 lements
+
+Another 10 elements:
+
+It had to  wait until all elements are filled after filling it had to resize for the newly added 10 elements.
+processing an allocation becomes.
+
+They did not want to wait tiil the threshold fills up by 100%
+
+before it fills 100% it should be notifedor signalled to increase the capacity and reserve the address space 
+
+My need is before it fills 25% of my Hashmap it should increse the capacity 16*2=32;
+
+
+HashMap h=new HashMap(0.25);  0-1
+5----->0.25-----16----32---64---128
+Always have loadfactor set to lesser ratio.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

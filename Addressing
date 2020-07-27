@@ -1,0 +1,65 @@
+
+
+
+
+Hashtable h=new HashTable(); capacity---11
+
+	h.put("a","Tejasvini");------------------------>a%11
+
+	h.put("x","Amresh");--------------------------->x%11
+
+	h.put("c","Mohammed");---------------------->
+
+	h.put("d","Joel");	
+	
+	h.put("y","sainath");------->0	
+
+	h.put("z","Shruthi");------->0	
+
+
+	h.put("f","Shravya");------->0	
+
+First Activity
+
+1.Constructs and Single Dimenional array
+
+[0]                             [1]                        [2]             [3]              [4]                [5]         [6]                  [7]        [8]         [9]             [10]
+
+                 	[Mohammed]        [Joel ]                  [sainath]    [ Shruthi ]                                                                                                                    [Tejas]         [Amresh]
+
+11--------------------->filled
+
+					Collision
+
+Open Addrresing
+1.Liner Search/Probing
+
+
+2. Situation is All 11 Address are filled   then what how it will alocate the vale which still has same index
+
+
+Closed Addressing
+1. Linked List or a doubly Linked List
+[0]                             [1]                        [2]             [3]              [4]                [5]         [6]                  [7]        [8]         [9]             [10]
+
+[Mohammed]        [Joel ]                  [sainath]    [ Shruthi ]                                                                                                                    [Tejas]         [Amresh]
+
+It will create a Pointer from the already availale adress
+
+[0] Mohammed-------->Node[Shravaya]  ------>[Lakshmi ]                 
+
+[10] Tejaswini--------->Node[Shinashu]------>[ Balaji]         
+
+
+
+U have to traveser within the linked list to get that particluar value.....
+
+
+
+
+
+
+
+
+
+
