@@ -1,0 +1,41 @@
+Branching in Git
+Lets Start!!!!!
+
+1.Create a branch
+
+e:\>J3TrainingLabs>git branch "UITeam"
+
+Now has we know we are still working on Master Branch so we need to do a "checkout" which means swith to the branch we have Created "UITeam"
+e:\>J3TrainingLabs>git checkout "UITeam"
+
+e:\>J3TrainingLabs>git status
+
+On Branch UI TeAM ---> this is the output u would be seeing
+
+
+
+
+
+2.Check out branch
+
+3.Merge to Master Branch ur newly created branches
+
+
+u should be in master branch first and the use the command below
+e:\>J3TrainingLabs>git merge UITeam
+
+it will be merged with master branch but still data is not pushed to master branch so we have to do this next
+
+e:\>J3TrainingLabs>git push -u origin master
+
+
+In case u have to delete the branch
+
+e:\>J3TrainingLabs>git branch -d "branchname"
+This will delete it fom local repsoitory not from remote u will still find this if u check it
+
+e:\>J3TrainingLabs>git push origin --delete "branchname"
+
+
+This will delete it fom remote repsoitory 
+https://www.youtube.com/watch?v=5Bp6GLU6HKE
